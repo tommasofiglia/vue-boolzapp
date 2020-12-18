@@ -32,13 +32,13 @@
   background: linear-gradient(180deg, rgba(221,219,209,1) 0%, rgba(210,219,220,1) 100%);
 }
 
-.prova{
+#app{
   position: absolute;
   z-index: 1;
-  width: 1630px;
-  height: 1010px;
   background: red;
   left: 50%;
   top: 50%;
   transform: translate(-50% , -50%);
+  width: 1430px;
+  height: 880px;
 }
