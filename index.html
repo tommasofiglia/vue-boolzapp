@@ -8,17 +8,26 @@
     <title>Whatsapp</title>
   </head>
   <body>
+
     <!-- Creazione dello sfondo diviso in due parti  -->
     <div class="background">
       <div class="background-green"></div>
       <div class="background-grey"></div>
     </div>
-    <!-- Container che contiene l'applicazione di whatsapp -->
-    <div id="app" class="app_container">
-      <div class="prova">
 
+    <!-- Container che contiene l'applicazione di whatsapp -->
+    <div id="app" class="app_container d-flex">
+      <div class="contacts_container"></div>
+
+      <!-- Container che contiene la chat -->
+      <div class="chat_container d-flex flex-column">
+        <div class="user_chat"></div>
+        <div class="chat"></div>
+        <div class="message_chat"></div>
       </div>
+
     </div>
+
   <!-- Script vueJS -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
