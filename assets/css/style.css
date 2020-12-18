@@ -35,10 +35,10 @@
 #app{
   position: absolute;
   z-index: 1;
-  background: red;
   left: 50%;
   top: 50%;
   transform: translate(-50% , -50%);
-  width: 1000px;
-  height: 580px;
+  width: 1550px;
+  height: 920px;
+  background-color: white;
 }
