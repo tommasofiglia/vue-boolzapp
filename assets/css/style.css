@@ -18,6 +18,7 @@
 /* Sfondo */
 .background{
   position: fixed;
+  z-index: 0;
 }
 .background-green{
   background-color: #009688;
@@ -31,15 +32,13 @@
   background: linear-gradient(180deg, rgba(221,219,209,1) 0%, rgba(210,219,220,1) 100%);
 }
 
-.app_container{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% ,-50%);
-}
-
 .prova{
-  width: 1040px;
-  height: 570px;
+  position: absolute;
+  z-index: 1;
+  width: 1700px;
+  height: 990px;
   background: red;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
 }
