@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: sans-serif;
+}
+
 /* Utility classes */
 
 
@@ -13,6 +17,14 @@
 
 .flex-column{
   flex-direction: column;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.rounded_img{
+  border-radius: 50%;
 }
 
 /* Sfondo */
@@ -44,23 +56,126 @@
   background-color: white;
 }
 
+/* Cointainer sezione con utenti */
+
 .contacts_container{
   width: 35%;
   height: 100%;
-  background-color: blue;
 }
+
+/* Rettangolo con nome utente e foto profilo */
+
+.user_name{
+  height: 13.5%;
+  background: #eaeaea;
+  border-right: 1px solid #d6d6d6;
+}
+
+.user_name img{
+  width: 90px;
+  margin-left: 20px;
+}
+
+.user_name .icons{
+  margin-left: 110px;
+}
+
+.user_name .icons i{
+  color: #b1b1b1;
+  font-size: 32px;
+  margin-right: 23px;
+  cursor: pointer;
+}
+
+.user_name span{
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+/* Sezione con l'opzione sulle notifiche desktop */
+
+.notification_option{
+  height: 15.5%;
+  background: #8edafc;
+}
+
+.notification_option>i{
+  font-size: 35px;
+  color: #8edafc;
+  background: white;
+  padding: 25px 19px;
+  margin-left: 35px;
+}
+
+.notification_option .activate_notifications{
+  margin-left: 15px;
+}
+
+.notification_option .activate_notifications p{
+  font-size: 25px;
+}
+
+.notification_option .activate_notifications a{
+  font-size: 20px;
+  color: #698991;
+  line-height: 35px;
+}
+
+/* Sezione con la barra di ricerca */
+.search{
+  height: 9.5%;
+  background-color: #fafafa;
+  border-right: 1px solid #d6d6d6;
+  position: relative;
+}
+
+.search input{
+  width: 95%;
+  height: 65%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  background-image: url('../img/search-solid.svg');
+  background-repeat: no-repeat;
+  background-size: 28px;
+  background-position: 4% 55%;
+  font-size: 20px;
+  border: 1px solid #f5f5f5;
+  padding-left: 87px;
+  color: #757575;
+}
+
+.list_users{
+  overflow-y: auto;
+  height: 61.5%;
+  width: 100%;
+  border-right: 1px solid #d6d6d6;
+}
+
+/* Cointainer sezione con utenti */
+
+/* Container sezione della chat */
 
 .chat_container{
   width: 65%;
   height: 100%;
 }
 
-.user_chat , .message_chat{
-  width: 100%;
+.user_chat{
   height: 13.5%;
-  background-color: black;
+  background-color: #eaeaea;
 }
 
 .chat{
   height: 73%;
+  background-image: url('../img/mine.jpg');
+  background-size: 77%;
+  overflow-y: scroll;
+}
+
+.message_chat{
+  height: 13.5%;
+  background-color: #f3eeea;
 }
