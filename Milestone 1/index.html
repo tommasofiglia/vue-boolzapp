@@ -19,7 +19,7 @@
     <!-- Container che contiene l'applicazione di whatsapp -->
     <div id="app" class="app_container d-flex">
 
-    <!-- Container di sinistra che contiene la sezione con i contatti e la ricerca -->
+    <!-- Inizio del container di sinistra che contiene la sezione con i contatti e la ricerca -->
       <div class="contacts_container d-flex flex-column">
 
         <!-- Sezione con nome dell'utente -->
@@ -47,15 +47,56 @@
           <input type="text" placeholder="Cerca o inizia una nuova chat">
         </div>
 
-        <div class="list_users"></div>
+        <!-- Sezione con la lista dei contatti -->
+        <div class="list_contacts">
+          <ul>
+
+            <li class="d-flex" v-for='contact in contacts'>
+              <a href="#" class="align-self-center"><img :src="contact.avatar" alt="" class="rounded_img"> </a>
+              <div class="contact_info">
+                <div class="contact_name">{{contact.name}}</div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    <!-- Fine del container di sinistra -->
+
+    <!-- Inizio del container di destra che contiene la chat -->
+
+      <div class="chat_container d-flex flex-column">
+
+      <!-- Dati del contatto a cui stiamo scrivendo -->
+        <div class="contact_data_chat d-flex align-items-center">
+
+          <a href="#"><img src="assets/img/avatar_1.jpg" alt="" class="rounded_img"></a>
+          <div class="contact_time_name">
+            <div class="name">Michele</div>
+            <div class="time">Ultimo accesso oggi alle</div>
+          </div>
+          <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-paperclip"></i>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+
+        </div>
+
+      <!-- Chat -->
+        <div class="chat"></div>
+
+      <!-- Parte con il necessario per mandare un messaggio in chat -->
+        <div class="message_chat d-flex align-items-center ">
+          <a href="#"><i class="far fa-smile"></i></i></a>
+          <input type="text" placeholder="Scrivi un messaggio">
+          <a href="#"><i class="fas fa-microphone"></i></a>
+        </div>
+
       </div>
 
-      <!-- Container che contiene la chat -->
-      <div class="chat_container d-flex flex-column">
-        <div class="user_chat"></div>
-        <div class="chat"></div>
-        <div class="message_chat"></div>
-      </div>
+      <!-- Fine del container di destra che contiene la chat -->
 
     </div>
 
