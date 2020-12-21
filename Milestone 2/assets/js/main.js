@@ -86,7 +86,13 @@ let app = new Vue({
           }
         ],
       },
-    ]
+    ],
 
+    posizioneUtente: 0
+  },
+  methods: {
+    changeUtente (ordine) {
+      this.posizioneUtente = ordine;
+    }
   }
 });

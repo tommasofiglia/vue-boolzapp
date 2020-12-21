@@ -51,7 +51,7 @@
         <div class="list_contacts">
           <ul>
 
-            <li class="d-flex" v-for='contact in contacts'>
+            <li class="d-flex" v-for='(contact, index) in contacts' @click="changeUtente(index)">
               <a href="#" class="align-self-center"><img :src="contact.avatar" alt="" class="rounded_img"> </a>
               <div class="contact_info">
                 <div class="contact_name">{{contact.name}}</div>
@@ -86,9 +86,10 @@
 
       <!-- Chat -->
         <div class="chat">
+
           <ul>
-<!-- v-if sent sotto in questo li -->
-            <li class="d-flex flex-column" v-for="text_message in contacts[0].messages">
+            <!-- v-for che porta alla scrittura della chat con un utente -->
+            <li class="d-flex flex-column" v-for="text_message in contacts[posizioneUtente].messages">
               <div v-if="text_message.status === 'sent'" class="message_box sent">
                 <span class="message">{{text_message.text}}</span>
                 <span class="time_date">DATA E ORA</span>
@@ -99,8 +100,6 @@
                 <span class="time_date">DATA E ORA</span>
               </div>
             </li>
-
-
 
           </ul>
 
