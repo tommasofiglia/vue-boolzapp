@@ -244,7 +244,7 @@ body{
   height: 73%;
   background-image: url('../img/mine.jpg');
   background-size: 77%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .chat ul{
@@ -255,25 +255,35 @@ body{
 
 .chat li{
   list-style: none;
+}
+
+.chat li div{
   width: max-content;
   border-radius: 15px;
   margin-bottom: 17px;
+  padding: 23px;
 }
 
-.chat li span{
-  padding: 20px;
+.chat li .message{
   display: inline-block;
   font-size: 25px;
+}
+
+.chat li .time_date{
+  display: block;
+  text-align: right;
 }
 
 .chat .sent{
   background-color: #d5f9ba;
   align-self: flex-end;
+  max-width: 90%;
 }
 
 .chat .received{
   background-color: white;
   align-self: flex-start;
+  max-width: 90%;
 }
 
 /* Sezione con il necessario per scrivere un messaggio */
