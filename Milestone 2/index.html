@@ -71,9 +71,9 @@
       <!-- Dati del contatto a cui stiamo scrivendo -->
         <div class="contact_data_chat d-flex align-items-center">
 
-          <a href="#"><img src="assets/img/avatar_1.jpg" alt="" class="rounded_img"></a>
+          <a href="#"><img :src="contacts[posizioneUtente].avatar" alt="" class="rounded_img"></a>
           <div class="contact_time_name">
-            <div class="name">Michele</div>
+            <div class="name">{{contacts[posizioneUtente].name}}</div>
             <div class="time">Ultimo accesso oggi alle</div>
           </div>
           <div class="icons">

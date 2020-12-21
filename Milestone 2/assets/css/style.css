@@ -181,6 +181,11 @@ body{
   border-bottom: 2px solid #f8f8f8;
 }
 
+.list_contacts li:hover{
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+
 .list_contacts li img{
   width: 100px;
   margin-left: 30px;
