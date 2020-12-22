@@ -51,7 +51,7 @@
         <div class="list_contacts">
           <ul>
 
-            <li class="d-flex" v-for='(contact, index) in filteredContacts' @click="changeUtente(index)">
+            <li class="d-flex" v-for='(contact, index) in filteredContacts' @click="changeUtente(contact)">
               <a href="#" class="align-self-center"><img :src="contact.avatar" alt="" class="rounded_img"> </a>
               <div class="contact_info">
                 <div class="contact_name">{{contact.name}}</div>

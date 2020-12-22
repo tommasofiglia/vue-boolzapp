@@ -101,8 +101,8 @@ let app = new Vue({
   },
   methods: {
 
-    changeUtente: function (ordine) {
-      this.posizioneUtente = ordine;
+    changeUtente: function (contact) {
+      this.posizioneUtente = this.contacts.indexOf(contact);
     }
     ,
     addNewMessageSent: function (){
