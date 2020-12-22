@@ -88,11 +88,35 @@ let app = new Vue({
       },
     ],
 
-    posizioneUtente: 0
+    posizioneUtente: 0,
+    newMessageSent: ""
   },
   methods: {
+
     changeUtente: function (ordine) {
       this.posizioneUtente = ordine;
+    }
+    ,
+    addNewMessageSent: function (){
+      this.contacts[this.posizioneUtente].messages.push(
+        {
+          text: this.newMessageSent,
+          status: 'sent'
+        }
+      );
+
+      this.newMessageSent = ""
+      setTimeout(this.addNewReceived, 1000);
+
+    }
+    ,
+    addNewReceived: function (){
+      this.contacts[this.posizioneUtente].messages.push(
+        {
+          text: 'Risposta del contatto dopo un secondo',
+          status: 'received'
+        }
+      );
     }
   }
 });

@@ -108,7 +108,7 @@
       <!-- Parte con il necessario per mandare un messaggio in chat -->
         <div class="message_chat d-flex align-items-center ">
           <a href="#"><i class="far fa-smile"></i></i></a>
-          <input type="text" placeholder="Scrivi un messaggio">
+          <input type="text" placeholder="Scrivi un messaggio" v-model="newMessageSent" @keyup.13="addNewMessageSent">
           <a href="#"><i class="fas fa-microphone"></i></a>
         </div>
 
