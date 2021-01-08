@@ -265,10 +265,11 @@ body{
 .chat li .message_box{
   border-radius: 15px;
   margin-bottom: 17px;
+  word-wrap: break-word;
 }
 
 .chat li .message{
-  display: inline-block;
+  display: block;
   font-size: 25px;
   padding: 25px 25px 5px 25px;
 }
